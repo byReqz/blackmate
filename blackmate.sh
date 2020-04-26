@@ -2,14 +2,13 @@
 #
 # Blackmate v0.43.1
 #
-# Description : BlackMate is a menu generator for the BlackArch Linux os tools, made for the wm xfce4.
+# Description : BlackMate is a menu generator for the BlackArch Linux os tools, made for the KDE Plasma Desktop.
 #		It will fetch the latest database of BlackArch and create an entry for each of them in the menu.
-#		Start from the version 0.4, the support for mate desktop is removed.
 #		You may run the script as often a new added tools is available.
 #		  
 #
-# Author : Dimitri Mader -> dimitri@linux.com
-# Url : https://github.com/Anyon3/blackmate
+# Author : Dimitri Mader -> dimitri@linux.com / byReqz -> https://byreqz.de/contact
+# Url : https://github.com/byReqz/blackmate
 # Gnu / GPL v3 
 
   #Check if the script have the root permission
@@ -90,7 +89,7 @@
   tar -zxf /usr/share/blackmate/blackarch.db.tar.gz -C /usr/share/blackmate/tmp
 
   #Terminal to use for the blackarch entry
-  terminal=`echo xfce4-terminal`;
+  terminal=`echo konsole`;
   
   echo -e "\033[32m[*]\e[0m Generating the menu, please wait...";
 
