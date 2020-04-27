@@ -16,8 +16,8 @@ I wanted to have a Blackarch Setup running on KDE which was not possible with th
 
 ```
 git clone https://github.com/byReqz/blackmate
-mv blackmate /usr/share/
-cd /usr/share/blackmate
-sh blackmate.sh
+sudo mv blackmate /usr/share/
+sudo cd /usr/share/blackmate
+sudo sh blackmate.sh
 ```
 License GNU/GPL v3, original code written by Dimitri Mader (dimitri@linux.com)
