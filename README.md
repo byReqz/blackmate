@@ -1,6 +1,6 @@
 # BlackMate
-
-![Alt text](blackmate.png?raw=true "Title")
+![Alt text](blackmate-kde.png?raw=true "Blackmate on KDE")
+![Alt text](blackmate.png?raw=true "Blackmate on XFCE")
 
 ## Blackmate
 
