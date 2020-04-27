@@ -2,9 +2,9 @@
 #
 # Blackmate v0.43.1
 #
-# Description : BlackMate is a menu generator for the BlackArch Linux os tools, made for the KDE Plasma Desktop.
+# Description : BlackMate is a menu generator for the BlackArch Linux os tools, unified for all Desktops.
 #		It will fetch the latest database of BlackArch and create an entry for each of them in the menu.
-#		You may run the script as often a new added tools is available.
+#		You may run the script as often as new tools are available.
 #		  
 #
 # Author : Dimitri Mader -> dimitri@linux.com / byReqz -> https://byreqz.de/contact
