@@ -51,28 +51,16 @@
 	sed 's/^Icon=.*/Icon=BlackArch-'$c'/' > /usr/share/desktop-directories/BlackArch-$c.directory 
 	
   done
-
-  #Fetch the current icons theme in use 
-  echo -e "\033[32m[*]\e[0m Update the icons theme in use";
-
-  if [[ -f /home/$SUDO_USER/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml ]]; then
-
-    thic=`cat /home/$SUDO_USER/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml | grep IconThemeName | 
-   	  sed 's/<property name="IconThemeName" type="string" value\="//' | tr -d '"/>' | tr -d ' '`;
-
-  #If the file do not exist, we assume the current theme is the default one (gnome)
-  else
-    thic=`echo gnome`;
-  fi
   
+# NEEDS FIXING
   #Delete any cache icons of the current theme
-  rm /usr/share/icons/$thic/icon-theme.cache 2> /dev/null || true
+#  rm /usr/share/icons/$thic/icon-theme.cache 2> /dev/null || true
   
   #Copy the extra icons into the icons theme
-  cp /usr/share/blackmate/menu-i/* /usr/share/icons/$thic/32x32/apps/ 2> /dev/null || true
+#  cp /usr/share/blackmate/menu-i/* /usr/share/icons/$thic/32x32/apps/ 2> /dev/null || true
   
   #Set the correct chmod
-  chmod 755 /usr/share/icons/$thic/32x32/apps/ -R 2> /dev/null || true
+#  chmod 755 /usr/share/icons/$thic/32x32/apps/ -R 2> /dev/null || true
 
   #Download and generate the latest tools list
   echo -e "\033[32m[*]\e[0m Download the tools list, please wait...";
@@ -203,20 +191,20 @@
 
 	  fi
 
-  	#For each tools of the target categorie
+  	#For each tools of the target category
   	for i in $tname; do
 
 	    #Parse the default launcher and set his name
 	    cat /usr/share/blackmate/dfdesk | sed 's/^Name=.*/Name='$i'/' |
 	    #Set the bash command to execute
-	    sed 's/^Exec=.*/Exec='$terminal' -e "bash -ic \\"\/usr\/bin\/'$i'; exec bash"\\"/' |
-	    #Set the categorie to the launcher && Set the name file to ba-`toolsname`.desktop 
+	    sed 's/^Exec=.*/Exec='bash' -c "\/usr\/bin\/'$i'; exec bash"/' |
+	    #Set the category to the launcher && Set the name file to ba-`toolsname`.desktop 
 	    sed 's/Categories=.*/Categories='$namecat';/' > /usr/share/blackmate/ba-$i.desktop
 	 
   	#End of the current tool
   	done
 
-  #End of the current categorie
+  #End of the current category
   done
 
   echo -e "\033[32m[*]\e[0m Cleanup...";
@@ -228,4 +216,4 @@
   rm -rf /usr/share/blackmate/tmp/ 2> /dev/null || true
   rm /usr/share/blackmate/blackarch.db.tar.gz 2> /dev/null || true
 
-  echo -e "\033[32m[*]\e[0m Done, in order to have a correct display of the new menu, you may need to restart xfce4";
+  echo -e "\033[32m[*]\e[0m Done, in order to have a correct display of the new menu, you may need to restart your Desktop Environment";
