@@ -4,15 +4,15 @@
 
 ## Blackmate
 
-Blackmate is a generator for the tools list of BlackArch Linux OS, made originally the XFCE4 Desktop. The script fetches the latest tools and generates a new entry on the start menu.
-I wanted to have a Blackarch Setup running on KDE which was not possible with the original Script so i improved it a bit. Its now running on all major Desktops including KDE Plasma.
+Blackmate is a generator for the tools list of BlackArch Linux OS, originally made for the XFCE4 Desktop. The script fetches the latest tools and generates a new entry on the start menu.
+I wanted to have a BlackArch setup running on KDE which was not possible with the original script so I improved it a bit. It can now run on all major Desktops including KDE Plasma.
 
 ## still to go
 - Fixing Folder Icons
 - Fix Typos
 - Generally clean up code
 
-## How to 
+## How to
 
 ```
 git clone https://github.com/byReqz/blackmate
