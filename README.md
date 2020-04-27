@@ -6,6 +6,7 @@
 
 Blackmate is a generator for the tools list of BlackArch Linux OS, made for the KDE Plasma Desktop. The script fetch the latest tools and generate an new entry on the blackarch menu
 
+Disclaimer: This is currently working on every DE except for KDE for some reason, aslong as Konsole is installed.
 ## How to 
 
 ```
