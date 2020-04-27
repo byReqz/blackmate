@@ -1,12 +1,13 @@
-# BlackMate for KDE
+# BlackMate
 
 ![Alt text](blackmate.png?raw=true "Title")
 
 ## Blackmate
 
-Blackmate is a generator for the tools list of BlackArch Linux OS, made for the KDE Plasma Desktop. The script fetch the latest tools and generate an new entry on the blackarch menu
+Blackmate is a generator for the tools list of BlackArch Linux OS, made originally the XFCE4 Desktop. The script fetches the latest tools and generates a new entry on the start menu.
+I wanted to have a Blackarch Setup running on KDE which was not possible with the original Script so i improved it a bit. Its now running on all major Desktops including KDE Plasma.
 
-Disclaimer: This is currently working on every DE except for KDE for some reason, aslong as Konsole is installed.
+
 ## How to 
 
 ```
