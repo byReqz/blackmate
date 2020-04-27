@@ -9,6 +9,8 @@ I wanted to have a Blackarch Setup running on KDE which was not possible with th
 
 ## still to go
 - Fixing Folder Icons
+- Fix Typos
+- Generally clean up code
 
 ## How to 
 
