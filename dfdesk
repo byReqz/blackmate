@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=default
-Icon=utility-terminal
+Icon=utilities-terminal
 Comment=default
 Exec=default
 Terminal=true
